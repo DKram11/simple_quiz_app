@@ -1,0 +1,130 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  display: flex;
+  background-color: #7d1bde;
+  background-image:radial-gradient(circle farthest-corner at top left, rgb(190, 75, 247), rgb(119, 0, 255),rgb(140, 3, 161));
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+}
+
+.container{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 400px;
+  background-color: white;
+  opacity: 90%;
+  align-items: center;
+  position: relative;
+  box-shadow: 2px 5px 40px #55166b;
+  border-radius: 15px;
+}
+
+.quiz-content{
+  position: relative;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+
+}
+
+h2{
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 1.8em;
+  color: #363636;
+  text-align: center;
+  color: #6a05c8;
+}
+
+ul{
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 80px;
+  height: 210px;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px;
+
+  
+}
+ul > li{
+  list-style: none;
+  margin-left: 10px;
+  font-size: 1.8em;
+  transition: 0.3s;
+  cursor: pointer;
+  padding: 8px;
+  text-align: center;
+  margin-right: 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  color: #4a008f;
+  margin: 2px;
+}
+
+li:hover{
+  font-size: 2.0em;
+  font-weight: 500;
+  background-color: #b676ff;
+  justify-content: center;
+  color: white;
+}
+
+li:active{
+  background-color: #7f2fdb;
+}
+
+#result{
+  height: 200px;
+  margin-bottom: 80px;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+#result > h1{
+  font-size: 2.5em;
+  color: #363636;
+  text-align: center;
+  font-size: 26px;
+}
+  
+.next, .restart{
+
+  position: absolute;
+  background-color: #9627ff;
+  width: 100%;
+  bottom: 0px;
+  font-size: 1.5em;
+  padding: 15px;
+  left: 0px;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  color: rgb(252, 197, 255);
+  border-radius: 0px 0px 12px 12px;
+}
+button:nth-child(2) {
+  display: none;
+}
+.restart:hover{
+  background-color:  #7c20d2;
+  color: rgb(253, 208, 255);
+  padding: 20px 20px;
+}
+.next:hover{
+  background-color:  #7c20d2;
+  color: rgb(253, 208, 255);
+  padding: 20px 20px;
+}
